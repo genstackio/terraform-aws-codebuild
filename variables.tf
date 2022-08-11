@@ -17,11 +17,11 @@ variable "image" {
 }
 variable "policy_statements" {
   type = list(
-  object({
-    actions   = list(string),
-    resources = list(string),
-    effect    = string
-  })
+    object({
+      actions   = list(string),
+      resources = list(string),
+      effect    = string
+    })
   )
   default = []
 }
